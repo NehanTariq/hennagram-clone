@@ -34,7 +34,7 @@ if (iconString.value === 'Log out') icon = Hamburger;
         <div class="flex items-center">
             <img 
             v-if="iconString === 'Profile'"
-            :class="{'mr-1': iconString === 'Profile'}"
+            :class="{'mr-0': iconString === 'Profile'}"
             class="rounded-full w-[30px] cursor-pointer" 
             :src="user.file"
             >
