@@ -8,12 +8,6 @@ import Comment from './Icons/Comment.vue';
 import Share from './Icons/Share.vue';
 import Save from './Icons/Save.vue';
 
-// import Heart from 'vue-material-design-icons/Heart.vue';
-// import HeartOutline from 'vue-material-design-icons/HeartOutline.vue';
-// import CommentOutline from 'vue-material-design-icons/CommentOutline.vue';
-// import SendOutline from 'vue-material-design-icons/SendOutline.vue';
-// import BookmarkOutline from 'vue-material-design-icons/BookmarkOutline.vue';
-
 const props = defineProps(['post'])
 const { post } = toRefs(props)
 const emit = defineEmits(['like'])
