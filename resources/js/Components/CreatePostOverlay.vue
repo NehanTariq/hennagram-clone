@@ -83,7 +83,7 @@
             </div>
 
             <!-- UPLOAD IMAGE FROM COMPUTER -->
-            <div class="w-full md:flex h-[calc(100%-55px)] rounded-xl overflow-auto">
+            <div class="w-full md:flex h-[calc(100%-71px)] rounded-xl overflow-auto">
                 <div class="flex items-center bg-gray-100 w-full h-full overflow-hidden">
                     <div v-if="!fileDisplay" class="flex flex-col items-center mx-auto">
                         <label

@@ -3,20 +3,13 @@ import { ref } from 'vue';
 import { Link } from '@inertiajs/vue3';
 
 // IMPORT ICONS
-import Comment from '../Components/Icons/Comment.vue';
 import Create from '../Components/Icons/Create.vue';
 import ChevronLeft from '../Components/Icons/ChevronLeft.vue';
-import ChevronRight from '../Components/Icons/ChevronRight.vue';
 import Explore from '../Components/Icons/Explore.vue';
-import Hamburger from '@/Components/Icons/Hamburger.vue';
 import Home from '@/Components/Icons/Home.vue';
-import LikedHeart from '@/Components/Icons/LikedHeart.vue';
 import Messages from '@/Components/Icons/Messages.vue';
-import Like from '@/Components/Icons/Like.vue';
-import Save from '@/Components/Icons/Save.vue';
+import Notifications from '@/Components/Icons/Notifications.vue';
 import Search from '@/Components/Icons/Search.vue';
-import Share from '@/Components/Icons/Share.vue';
-import Toggle from '@/Components/Icons/Toggle.vue';
 
 import MenuItem from '@/Components/MenuItem.vue';
 import CreatePostOverlay from '@/Components/CreatePostOverlay.vue';
@@ -33,7 +26,7 @@ let showCreatePost = ref(false)
                     <img src="/images/hennagram-logo.png" alt="logo" class="w-[105px] ml-6 cursor-pointer">
                 </Link>
                 <div class="flex items-center gap-5 mr-6">                    
-                    <Like class="cursor-pointer" />
+                    <Notifications class="cursor-pointer" />
                     <Messages class="cursor-pointer" />
                 </div>
             </div>

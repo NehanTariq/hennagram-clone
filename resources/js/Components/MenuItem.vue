@@ -7,7 +7,7 @@ import Explore from '../Components/Icons/Explore.vue';
 import Hamburger from '@/Components/Icons/Hamburger.vue';
 import Home from '@/Components/Icons/Home.vue';
 import Messages from '@/Components/Icons/Messages.vue';
-import Like from '@/Components/Icons/Like.vue';
+import Notifications from '@/Components/Icons/Notifications.vue';
 import Search from '@/Components/Icons/Search.vue';
 import Toggle from '@/Components/Icons/Toggle.vue';
 
@@ -23,7 +23,7 @@ if (iconString.value === 'Search') icon = Search;
 if (iconString.value === 'Create') icon = Create;
 if (iconString.value === 'Messages') icon = Messages;
 if (iconString.value === 'Explore') icon = Explore;
-if (iconString.value === 'Notifications') icon = Like;
+if (iconString.value === 'Notifications') icon = Notifications;
 if (iconString.value === 'Profile') icon = Toggle;
 if (iconString.value === 'Log out') icon = Hamburger;
 
@@ -35,7 +35,7 @@ if (iconString.value === 'Log out') icon = Hamburger;
             <img 
             v-if="iconString === 'Profile'"
             :class="{'mr-1': iconString === 'Profile'}"
-            class="rounded-full ml-[2px] w-[30px] cursor-pointer" 
+            class="rounded-full w-[30px] cursor-pointer" 
             :src="user.file"
             >
             <component v-else :is="icon" />
