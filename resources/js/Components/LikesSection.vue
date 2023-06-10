@@ -36,13 +36,13 @@ const isHeartActiveComputed = computed(()=>{
 <template>
     <div class="flex z-20 items-center justify-between">
         <div class="flex items-center">
-            <button @click="$emit('like', {post, user})" class="-mt-[11px]">
+            <button @click="$emit('like', {post, user})" class="mt-[10px]">
                 <Like v-if="!isHeartActiveComputed" class="cursor-pointer" />
                 <LikedHeart v-else class="cursor-pointer" />
             </button>
-            <Comment class="pl-3 pt-[10px] cursor-pointer" />
-            <Share class="pl-3 pt-[10px] cursor-pointer" />
+            <Comment class="pt-[10px] cursor-pointer" />
+            <Share class="pt-[10px] cursor-pointer" />
         </div>
-        <Save class="pl-3 pt-[10px] cursor-pointer" />
+        <Save class="pt-[10px] cursor-pointer" />
     </div>
 </template>
